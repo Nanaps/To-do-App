@@ -12,23 +12,26 @@ function App() {
   };
 
   const messageInput = (even) => {
-    setTextInput(even.target.value);
+    textInput(even.target.value);
   };
-  console.log("hello");
+
+
   return (
     <div className="App">
       <h1>TO DO App🤩</h1>
-      <label forhtml="">What are you doing? </label>
+      <label forhtml="">To do</label>
       <input
         type="text"
-        placeholder="Enter your message"
+        placeholder="type your to do thing"
         onChange={messageInput}
-        value={textInput}
+        values="{textInput}"
       />
       <button onClick={clickAddToDo}>ADD</button>
-      {showText.map((item) => {
-        return <h1>{item}</h1>;
-      })}
+      {
+        (setShowText.map = (item) => {
+          return <il>{item}</il>;
+        })
+      }
     </div>
   );
 }
